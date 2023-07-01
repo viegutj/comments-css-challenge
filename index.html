@@ -1,60 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <head>
+        <meta charset="UTF-8">
+        <meta
+        name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- displays site properly based on user's device -->
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <!-- Fonts from google -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+        <link
+        rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <title>CSS Challenge | Interactive comments section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  <!-- Comment #1 -->
-  12
-  <img src="./images/avatars/image-amyrobson.png" alt="profile" />
-  amyrobson 
-  1 month ago
-  Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.
-
-  <!-- Comment #2 -->
-  5
-  <img src="./images/avatars/image-maxblagun.png" alt="profile" />
-  maxblagun 
-  2 weeks ago
-  Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
-
-  <!-- Comment #3 (Reply to comment #2) -->
-  4
-  <img src="./images/avatars/image-ramsesmiron.png" alt="profile" />
-  ramsesmiron 
-  1 week ago
-  @maxblagun If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.
-
-  <!-- Comment #4 (Reply to comment #2) -->
-  2
-  <img src="./images/avatars/image-juliusomo.png" alt="profile" />
-  juliusomo 
-  2 days ago
-  @ramsesmiron I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.
+        <!-- Fonts from google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous" defer></script>
 
 
-  
-  <div class="attribution">
-    Challenge adapted from <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <title>CSS Challenge | Interactive comments section</title>
+
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <style>
+            .attribution {
+                font-size: 11px;
+                text-align: center;
+            }
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Comment #1 -->
+        <section class="grid-container">
+            12
+            <img src="./images/avatars/image-amyrobson.png" alt="profile"/>
+            amyrobson
+            1 month ago
+            <p>
+              Impressive! Though it seems the drag feature could be improved. 
+              But overall it looks incredible. You've nailed the design and the responsiveness 
+              at various breakpoints works really well.
+            </p> 
+                                  
+        </section>
+
+        <!-- Comment #2 -->
+        <section class="grid-container">
+            5
+            <img src="./images/avatars/image-maxblagun.png" alt="profile"/>
+            maxblagun 
+            2 weeks ago
+            <p>
+              Woah, your project looks awesome! How long have you been coding for? I'm still new, 
+              but think I want to dive into React as well soon. Perhaps you can give me an insight 
+              on where I can learn React? Thanks!
+            </p>
+                                  
+        </section>
+
+        <!-- Comment #3 (Reply to comment #2) -->
+        <section class="grid-container">
+            4
+            <img src="./images/avatars/image-ramsesmiron.png" alt="profile"/>
+            ramsesmiron 
+            1 week ago
+            <p>@maxblagun If you're still new, I'd recommend focusing on the fundamentals 
+              of HTML, CSS, and JS before considering React. It's very tempting to jump ahead 
+              but lay a solid foundation first.
+            </p>                 
+        </section>
+
+        <!-- Comment #4 (Reply to comment #2) -->
+        <section class="grid-container">
+            2
+            <img src="./images/avatars/image-juliusomo.png" alt="profile"/>
+            juliusomo 
+            2 days ago
+            <p>
+              @ramsesmiron I couldn't agree more with this. Everything moves so fast and it 
+              always seems like everyone knows the newest library/framework. But the fundamentals 
+              are what stay constant.
+            </p>
+        </section>
+
+
+        <footer class="attribution">
+            Challenge adapted from
+            <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="#">Jonathan Viegut</a>.
+        </footer>
+    </body>
 </html>
