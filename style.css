@@ -1,6 +1,6 @@
 body{
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 30%;
+    margin-right: 30%;
     margin-top: 5%;
     margin-bottom: 5%;
     background-color: whitesmoke;
@@ -26,13 +26,13 @@ body{
 }
 
 button{
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     border: none;
     background: none;
     color: hsl(238, 40%, 52%);
     font-weight: 600;
     font-size: 1em;
-    border-radius: 25px;
+    border-radius: 20px;
 }
 
 button:hover{
@@ -43,11 +43,13 @@ button:hover{
 .votes{
     grid-area: v;
     /* border-style: solid; */
-    margin-left: 10px;
+    margin-left: 20px;
     background: whitesmoke;
-    padding: 5px;
+    padding: 7px;
     text-align: center;
-    border-radius: 25px;
+    border-radius: 20px;
+    color: hsl(238, 40%, 52%);
+    font-weight: 500;
 }
 
 .profile-img{
@@ -55,10 +57,10 @@ button:hover{
     /* border-style: solid; */
     justify-self: left;
     margin-left: 5%;
-    margin-right: 5%;
-    max-width:100%;
-    height: auto;
+    max-width: 3em;
     padding-top: 10%;
+    width: 100%;
+    margin: auto;
 }
 
 .username{
@@ -67,6 +69,8 @@ button:hover{
     justify-self: left;
     font-weight: 500;
     padding-top: 10%;
+    width: 100%;
+    margin: auto;
 }
 
 .timestamp{
@@ -75,11 +79,13 @@ button:hover{
     justify-self: left;
     color: grey;
     padding-top: 10%;
+    width: 100%;
+    margin: auto;
+    /* padding-right: 4em; */
 }
 
 .message{
     grid-area: m;
-    /* border-style: solid; */
     margin-right: 5%;
     margin-left: 10p;
     font-size: 16px;
@@ -87,10 +93,11 @@ button:hover{
 }
 
 .reply{
-    /* font-family: 'Font Awesome 5 Free'; */
     justify-self: right;
-    margin-right: 5%;
-    padding-top: 10%;
+    margin-left: 10em;
+    margin-top: 2em;
+    /* margin: auto; */
+    /* margin-right: 5%; */
 }
 
 .at {
@@ -101,5 +108,43 @@ button:hover{
 .you{
     background-color: hsl(238, 40%, 52%);
     color: whitesmoke;
-    margin-left: 1em;
+    /* margin-left: .5em;
+    padding-right: .5em;
+    padding-left: .5em; */
+    /* padding-top: .2em;
+    padding-bottom: .2em; */
+    border-radius: 5%;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    height: 1.5em;
+    /* width: 100%;
+    margin: auto; */
+    align-self: start;
+    display: inline-block;
+}
+
+.profile-info{
+    display: flex;
+    column-gap: 2em;
+}
+
+.response-thread{
+    margin-left: 2em;
+    padding-left: 2em;
+    border-left-style: solid;
+    border-left-color: hsl(223, 19%, 93%)
+}
+
+.delete{
+    justify-self: right;
+    margin-left: 10em;
+    margin-top: 2em;
+}
+.edit{
+    margin-top: 2em;
+}
+
+#user-input{
+    width: 100%;
 }
