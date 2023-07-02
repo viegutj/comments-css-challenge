@@ -1,5 +1,62 @@
+body{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 0;
+    color: hsl(238, 40%, 52%);
+
+    /* or */
+    background-color: hsl(239, 57%, 85%);
+
+    /* or */
+    border: 1px solid hsl(211, 10%, 45%);
+}
+
 .grid-container{
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
+    display: grid;
+    grid-template-areas: 
+    "v p u t r"
+    "v m m m m"
+    "v m m m m";
+    align-items: center;
+    justify-items: center;
+
+}
+
+.votes{
+    grid-area: v;
+    border-style: solid;
+}
+
+.profile-img{
+    grid-area: p;
+    border-style: solid;
+    justify-self: left;
+}
+
+.username{
+    grid-area: u;
+    border-style: solid;
+    justify-self: left;
+}
+
+.timestamp{
+    grid-area: t;
+    border-style: solid;
+    justify-self: left;
+}
+
+.message{
+    grid-area: m;
+    border-style: solid
+}
+
+.reply{
+    font-family: 'Font Awesome 5 Free';
+	font-weight: 600;
+	font-size: 17px;
+	content: '\f3e5';
+	margin-right: 4px;
+	vertical-align: -1px;
 }
