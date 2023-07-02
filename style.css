@@ -25,6 +25,25 @@ body{
     border-radius: 25px;
 }
 
+#input-container{
+    display: grid;
+    /* grid-template-columns: 30px, 30px, 30px;
+    grid-template-rows: auto; */
+    grid-template-areas: 
+    "lpi ui si"
+    ". ui .";
+    align-items: center;
+    justify-items: center;
+    background-color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-gap:1em;
+    border-radius: 25px;
+    /* justify-content: space-around; */
+}
+
 button{
     padding-bottom: 10px;
     border: none;
@@ -82,6 +101,7 @@ button:hover{
     width: 100%;
     margin: auto;
     /* padding-right: 4em; */
+    align-self: start;
 }
 
 .message{
@@ -145,6 +165,29 @@ button:hover{
     margin-top: 2em;
 }
 
+#last-profile-img{
+    /* grid-column: 1; */
+    grid-area: lpi;
+    align-self: left;
+    /* border-style: solid; */
+    justify-self: left;
+    margin-left: 5%;
+    max-width: 3em;
+    width: 100%;
+    margin: auto;
+}
+
 #user-input{
     width: 100%;
+    /* grid-column: 2; */
+    grid-area: ui;
+    height: 5em;
+    font-family: Rubik;
+    text-align: justify;
+    /* width: 300%; */
+}
+
+#send-input{
+    /* grid-column: 3; */
+    grid-area: si;
 }
