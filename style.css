@@ -3,13 +3,9 @@ body{
     margin-right: 20%;
     margin-top: 5%;
     margin-bottom: 5%;
-    color: hsl(238, 40%, 52%);
-
-    /* or */
-    background-color: hsl(239, 57%, 85%);
-
-    /* or */
-    border: 1px solid hsl(211, 10%, 45%);
+    background-color: whitesmoke;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
 }
 
 .grid-container{
@@ -21,50 +17,66 @@ body{
     align-items: center;
     justify-items: center;
     background-color: white;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    grid-gap:1em;
+    border-radius: 25px;
 }
 
-/* .plus{
-
+button{
+    padding-bottom: 5px;
+    border: none;
+    background: none;
 }
-
-.minus{
-
-} */
 
 .votes{
     grid-area: v;
-    border-style: solid;
+    /* border-style: solid; */
+    margin-left: 10px;
+    background: whitesmoke;
+    padding: 5px;
+    text-align: center;
+    border-radius: 25px;
 }
 
 .profile-img{
     grid-area: p;
-    border-style: solid;
+    /* border-style: solid; */
     justify-self: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* width: 50px; */
+    padding-top: 10%;
 }
 
 .username{
     grid-area: u;
-    border-style: solid;
+    /* border-style: solid; */
     justify-self: left;
+    font-weight: 500;
+    padding-top: 10%;
 }
 
 .timestamp{
     grid-area: t;
-    border-style: solid;
+    /* border-style: solid; */
     justify-self: left;
+    color: grey;
+    padding-top: 10%;
 }
 
 .message{
     grid-area: m;
-    border-style: solid
+    /* border-style: solid; */
+    margin-right: 5%;
+    margin-left: 10p;
+    font-size: 16px;
+    color: grey;
 }
 
 .reply{
-    font-family: 'Font Awesome 5 Free';
-	font-weight: 600;
-	font-size: 17px;
-	content: '\f3e5';
-	margin-right: 4px;
-	vertical-align: -1px;
+    /* font-family: 'Font Awesome 5 Free'; */
+    justify-self: right;
+    margin-right: 5%;
+    padding-top: 10%;
 }
