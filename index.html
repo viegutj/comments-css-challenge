@@ -16,8 +16,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
         <link
         rel="stylesheet" href="style.css">
+        <!-- commented out Bootstrap, chose instead to focus on CSS grids -->
         <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous" defer></script> -->
+                                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous" defer></script> -->
 
 
         <title>CSS Challenge | Interactive comments section</title>
@@ -56,11 +57,12 @@
             <div class="username">amyrobson</div>
             <div class="timestamp">1 month ago</div>
             <button class="reply">
-                <svg width="14" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M.227 4.316 5.04.16a.657.657 0 0 1 1.085.497v2.189c4.392.05 7.875.93 7.875 5.093 0 1.68-1.082 3.344-2.279 4.214-.373.272-.905-.07-.767-.51 1.24-3.964-.588-5.017-4.829-5.078v2.404c0 .566-.664.86-1.085.496L.227 5.31a.657.657 0 0 1 0-.993Z" fill="#5357B6"/></svg>Reply</button>
+                <svg width="14" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M.227 4.316 5.04.16a.657.657 0 0 1 1.085.497v2.189c4.392.05 7.875.93 7.875 5.093 0 1.68-1.082 3.344-2.279 4.214-.373.272-.905-.07-.767-.51 1.24-3.964-.588-5.017-4.829-5.078v2.404c0 .566-.664.86-1.085.496L.227 5.31a.657.657 0 0 1 0-.993Z" fill="#5357B6"/></svg> Reply
+            </button>
             <p class="message">
-                Impressive! Though it seems the drag feature could be improved. 
-                                              But overall it looks incredible. You've nailed the design and the responsiveness 
-                                              at various breakpoints works really well.
+              Impressive! Though it seems the drag feature could be improved. 
+              But overall it looks incredible. You've nailed the design and the responsiveness 
+              at various breakpoints works really well.
             </p>
         </section>
 
@@ -79,16 +81,20 @@
                     </button>
                 </div>
             </span>
-            <div class="profile-img"><img src="./images/avatars/image-maxblagun.png" alt="profile"/></div>
-            <div class="username">maxblagun
+            <img class="profile-img" src="./images/avatars/image-maxblagun.png" alt="profile"/>
+            <div class="username">
+              maxblagun
             </div>
-            <div class="timestamp">2 weeks ago</div>
+            <div class="timestamp">
+              2 weeks ago
+            </div>
             <button class="reply">
-                <svg width="14" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M.227 4.316 5.04.16a.657.657 0 0 1 1.085.497v2.189c4.392.05 7.875.93 7.875 5.093 0 1.68-1.082 3.344-2.279 4.214-.373.272-.905-.07-.767-.51 1.24-3.964-.588-5.017-4.829-5.078v2.404c0 .566-.664.86-1.085.496L.227 5.31a.657.657 0 0 1 0-.993Z" fill="#5357B6"/></svg>Reply</button>
+                <svg width="14" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M.227 4.316 5.04.16a.657.657 0 0 1 1.085.497v2.189c4.392.05 7.875.93 7.875 5.093 0 1.68-1.082 3.344-2.279 4.214-.373.272-.905-.07-.767-.51 1.24-3.964-.588-5.017-4.829-5.078v2.404c0 .566-.664.86-1.085.496L.227 5.31a.657.657 0 0 1 0-.993Z" fill="#5357B6"/></svg> Reply
+            </button>
             <p class="message">
-                Woah, your project looks awesome! How long have you been coding for? I'm still new, 
-                                          but think I want to dive into React as well soon. Perhaps you can give me an insight 
-                                          on where I can learn React? Thanks!
+              Woah, your project looks awesome! How long have you been coding for? I'm still new, 
+              but think I want to dive into React as well soon. Perhaps you can give me an insight 
+              on where I can learn React? Thanks!
             </p>
         </section>
 
@@ -107,15 +113,18 @@
                     </button>
                 </div>
             </span>
-            <div class="profile-img"><img src="./images/avatars/image-ramsesmiron.png" alt="profile"/></div>
-            <div class="username">ramsesmiron
+            <img class="profile-img" src="./images/avatars/image-ramsesmiron.png" alt="profile"/>
+            <div class="username">
+              ramsesmiron
             </div>
             <div class="timestamp">1 week ago</div>
             <button class="reply">
-                <svg width="14" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M.227 4.316 5.04.16a.657.657 0 0 1 1.085.497v2.189c4.392.05 7.875.93 7.875 5.093 0 1.68-1.082 3.344-2.279 4.214-.373.272-.905-.07-.767-.51 1.24-3.964-.588-5.017-4.829-5.078v2.404c0 .566-.664.86-1.085.496L.227 5.31a.657.657 0 0 1 0-.993Z" fill="#5357B6"/></svg>Reply</button>
-            <p class="message">@maxblagun If you're still new, I'd recommend focusing on the fundamentals 
-                                              of HTML, CSS, and JS before considering React. It's very tempting to jump ahead 
-                                              but lay a solid foundation first.
+                <svg width="14" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M.227 4.316 5.04.16a.657.657 0 0 1 1.085.497v2.189c4.392.05 7.875.93 7.875 5.093 0 1.68-1.082 3.344-2.279 4.214-.373.272-.905-.07-.767-.51 1.24-3.964-.588-5.017-4.829-5.078v2.404c0 .566-.664.86-1.085.496L.227 5.31a.657.657 0 0 1 0-.993Z" fill="#5357B6"/></svg> Reply
+            </button>
+            <p class="message">
+              <span class="at">@maxblagun</span> If you're still new, I'd recommend focusing on the fundamentals 
+              of HTML, CSS, and JS before considering React. It's very tempting to jump ahead 
+              but lay a solid foundation first.
             </p>
         </section>
 
@@ -129,18 +138,26 @@
                 </div>
                 2
                 <div>
-                  <button class="downvote-button">
-                    <svg width="11" height="3" xmlns="http://www.w3.org/2000/svg"><path d="M9.256 2.66c.204 0 .38-.056.53-.167.148-.11.222-.243.222-.396V.722c0-.152-.074-.284-.223-.395a.859.859 0 0 0-.53-.167H.76a.859.859 0 0 0-.53.167C.083.437.009.57.009.722v1.375c0 .153.074.285.223.396a.859.859 0 0 0 .53.167h8.495Z" fill="#C5C6EF"/></svg>
-                  </button>
+                    <button class="downvote-button">
+                        <svg width="11" height="3" xmlns="http://www.w3.org/2000/svg"><path d="M9.256 2.66c.204 0 .38-.056.53-.167.148-.11.222-.243.222-.396V.722c0-.152-.074-.284-.223-.395a.859.859 0 0 0-.53-.167H.76a.859.859 0 0 0-.53.167C.083.437.009.57.009.722v1.375c0 .153.074.285.223.396a.859.859 0 0 0 .53.167h8.495Z" fill="#C5C6EF"/></svg>
+                    </button>
                 </div>
             </span>
-            <div class="profile-img"><img src="./images/avatars/image-juliusomo.png" alt="profile"/></div>
-            juliusomo 
-                                    2 days ago
-            <p>
-                @ramsesmiron I couldn't agree more with this. Everything moves so fast and it 
-                                              always seems like everyone knows the newest library/framework. But the fundamentals 
-                                              are what stay constant.
+            <img class="profile-img" src="./images/avatars/image-juliusomo.png" alt="profile"/>
+            <div class="username">
+              juliusomo               
+              <span class="you">   you</span>
+            </div>
+            <div class="timestamp">
+              2 days ago
+            </div>
+            <button class="reply">
+              <svg width="14" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M.227 4.316 5.04.16a.657.657 0 0 1 1.085.497v2.189c4.392.05 7.875.93 7.875 5.093 0 1.68-1.082 3.344-2.279 4.214-.373.272-.905-.07-.767-.51 1.24-3.964-.588-5.017-4.829-5.078v2.404c0 .566-.664.86-1.085.496L.227 5.31a.657.657 0 0 1 0-.993Z" fill="#5357B6"/></svg> Reply
+            </button>
+            <p class="message">
+              <span class="at">@ramsesmiron</span> I couldn't agree more with this. Everything moves so fast and it 
+              always seems like everyone knows the newest library/framework. But the fundamentals 
+              are what stay constant.
             </p>
         </section>
 
@@ -148,7 +165,7 @@
         <footer class="attribution">
             Challenge adapted from
             <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9" target="_blank">Frontend Mentor</a>. 
-                                            Coded by
+            Coded by
             <a href="#">Jonathan Viegut</a>.
         </footer>
     </body>

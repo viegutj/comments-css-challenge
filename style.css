@@ -14,6 +14,8 @@ body{
     "v p u t r"
     "v m m m m"
     "v m m m m";
+    grid-template-rows: 20%, 40%, 40%;
+    grid-template-columns: 15%, 10%, 15%, 15%, 30%, 15%;
     align-items: center;
     justify-items: center;
     background-color: white;
@@ -27,6 +29,15 @@ button{
     padding-bottom: 5px;
     border: none;
     background: none;
+    color: hsl(238, 40%, 52%);
+    font-weight: 600;
+    font-size: 1em;
+    border-radius: 25px;
+}
+
+button:hover{
+    background-color: grey;
+    animation: infinite;
 }
 
 .votes{
@@ -45,7 +56,8 @@ button{
     justify-self: left;
     margin-left: 5%;
     margin-right: 5%;
-    /* width: 50px; */
+    max-width:100%;
+    height: auto;
     padding-top: 10%;
 }
 
@@ -79,4 +91,15 @@ button{
     justify-self: right;
     margin-right: 5%;
     padding-top: 10%;
+}
+
+.at {
+    color: hsl(238, 40%, 52%);
+    font-weight: 500;
+}
+
+.you{
+    background-color: hsl(238, 40%, 52%);
+    color: whitesmoke;
+    margin-left: 1em;
 }
