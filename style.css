@@ -3,7 +3,6 @@ body{
     margin-right: 20%;
     margin-top: 5%;
     margin-bottom: 5%;
-    padding: 0;
     color: hsl(238, 40%, 52%);
 
     /* or */
@@ -21,8 +20,17 @@ body{
     "v m m m m";
     align-items: center;
     justify-items: center;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+/* .plus{
 
 }
+
+.minus{
+
+} */
 
 .votes{
     grid-area: v;
