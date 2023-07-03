@@ -56,7 +56,10 @@ button{
 
 button:hover{
     background-color: grey;
-    animation: infinite;
+}
+
+button:active{
+    background-color: green;
 }
 
 .votes{
@@ -187,7 +190,10 @@ button:hover{
     /* width: 300%; */
 }
 
-#send-input{
+/* interfering with button hover and click */
+/* #send-btn{
     /* grid-column: 3; */
-    grid-area: si;
-}
+    /* grid-area: si;
+    background-color: hsl(238, 40%, 52%);
+    color: white; */
+/* } */
